@@ -1,0 +1,40 @@
+.product__section{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.product__section img{
+    width: 30%;
+    margin-right: 10%;
+}
+
+.review__section{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.review__section textarea{
+    width: 50%;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+@media (max-width: 792px){
+    .product__section{
+        flex-wrap: wrap;
+    }
+    .product__section img{
+        width: 50%;
+    }
+
+    .review__section textarea{
+        width: 100%;
+    }
+}

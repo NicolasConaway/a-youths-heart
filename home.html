@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Youth's Heart</title>
+    <link rel="stylesheet" type="text/css" href="main_styles.css">
+    <link rel="stylesheet" type="text/css" href="HomePage/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start of the header -->
+    <header>
+        <div class="main_header">
+        <div class="mobile__header">
+            <!-- Hamburger menu icon -->
+            <div id="mobile_hamburger" onclick="onClickMenu()">
+                <p class="toggle__nav">Toggle Nav</p>
+                <span id="topBar"></span>
+                <span id="middleBar"></span>
+                <span id="bottomBar"></span>
+            </div>
+        </div>
+
+        <!-- Site's logo -->
+        <h1 class="site__title">A Youth's Heart</h1>
+
+        <!-- Desktop navbar -->
+        <nav class="desktop__nav">
+                <ul class="desktop_nav_list">
+                    <li class="desktop__nav--list"><a href="home.html" class="nav__link">Home</a></li>
+                    <li class="desktop__nav--list"><a href="products.html" class="nav__link">Supplies</a></li>
+                    <li class="desktop__nav--list"><a href="contacts.html" class="nav__link">Contacts</a></li>
+                    <li class="desktop__nav--list"><a href="donate.html" class="nav__link">Donate</a></li>
+                </ul>
+            </nav>
+        </div>
+
+            <!-- Mobile navbar -->
+            <nav class="mobile__nav">
+                <ul class="nav_list" id="nav_list">
+                    <li class="mobile__nav--list"><a href="home.html" class="nav__link">Home</a></li>
+                    <li class="mobile__nav--list"><a href="products.html" class="nav__link">Supplies</a></li>
+                    <li class="mobile__nav--list"><a href="contacts.html" class="nav__link">Contacts</a></li>
+                    <li class="mobile__nav--list"><a href="donate.html" class="nav__link">Donate</a></li>
+                </ul>
+            </nav>
+            
+    </header>
+
+    <!-- Slideshow for home page -->
+    <figure class="slideshow">
+        <img class="slideshow__images" src="Images/slidePhoto1.jpg" alt="Child going through cnacer">
+        <img class="slideshow__images" src="Images/slidePhoto2.jpg" alt="Medical supplies display">
+    </figure>
+
+    <!-- Our goal's section paragraph -->
+    <section class="our__goal">
+        <img id="goal__img" src="Images/goalPhoto.jpg" alt="Cancer ribbon in child's hand">
+        <h2>Our Goal</h2>
+        <p class="section__text">Our mission at A Youth's Heart is to help families who have children who are terminally ill or are struggling and fighting
+        with cancer at a very young age. We are aware that not everyone can afford to buy the essentials for their children who need
+        it straight from the store or hospitals, so we created a place where they can buy items for a cheaper price and help dontate
+        to charities that help with caring for the children who are struggling with these situations. 40% of all proceeds go to a 
+        charity of your choosing.
+        </p>
+    </section>
+
+    <!-- Cards links to other pages -->
+    <section class="card__links">
+        <h2>Sub Header 2</h2>
+        <a href="products.html">
+        <figure class="home__cards">
+            <img src="Images/shoppingCart.webp" alt="Shopping icon" style="width: 100%;">
+                <h3>Shop for Supplies!</h3>
+        </figure>
+        </a>
+
+        <a href="donate.html">
+        <figure class="home__cards">
+            <img src="Images/donateIcon.webp" alt="Donate icon" style="width: 100%;">
+                <h3>Donate and help!</h3>
+        </figure>
+        </a>
+
+        <a href="contacts.html">
+        <figure class="home__cards">
+            <img src="Images/contactIcon.png" alt="Contact icon" style="width: 100%;"> 
+                <h3>Contacts us!</h3>
+        </figure>
+        </a>
+    </section>
+
+    <!-- Video PSA for the home page -->
+    <section class="psaVideo">
+        <h2>A Word From Our Sponser</h2>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zbyJc3z45Ak"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="socialMedia">
+            <a href="https://www.facebook.com/"><img src="Images/facebookIcon.png" alt="Facebook Logo"></a>
+            <a href="https://twitter.com/explore"><img src="Images/twitterIcon.png" alt="Twitter Logo"></a>
+            <a href="https://www.instagram.com/"><img src="Images/instagramIcon.png" alt="Instagram Logo"></a>
+            <a href="https://www.youtube.com/"><img src="Images/youtubeIcon.png" alt="Youtube Logo"></a>
+        </div>
+        <p class="copyright">Copyright © 2020 All Rights Reserved.</p>
+    </footer>
+
+    <script src="main_script.js"></script>
+</body>
+</html>

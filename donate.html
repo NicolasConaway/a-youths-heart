@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Youth's Heart</title>
+    <link rel="stylesheet" type="text/css" href="main_styles.css">
+    <link rel="stylesheet" type="text/css" href="DonatePage/donate.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="main_header">
+        <div class="mobile__header">
+            <div id="mobile_hamburger" onclick="onClickMenu()">
+                <p class="toggle__nav">Toggle Nav</p>
+                <span id="topBar"></span>
+                <span id="middleBar"></span>
+                <span id="bottomBar"></span>
+            </div>
+        </div>
+
+        <h1 class="site__title">A Youth's Heart</h1>
+
+        <nav class="desktop__nav">
+                <ul class="desktop_nav_list">
+                    <li class="desktop__nav--list"><a href="home.html" class="nav__link">Home</a></li>
+                    <li class="desktop__nav--list"><a href="products.html" class="nav__link">Supplies</a></li>
+                    <li class="desktop__nav--list"><a href="contacts.html" class="nav__link">Contacts</a></li>
+                    <li class="desktop__nav--list"><a href="donate.html" class="nav__link">Donate</a></li>
+                </ul>
+            </nav>
+        </div>
+
+            <nav class="mobile__nav">
+                <ul class="nav_list" id="nav_list">
+                    <li class="mobile__nav--list"><a href="home.html" class="nav__link">Home</a></li>
+                    <li class="mobile__nav--list"><a href="products.html" class="nav__link">Supplies</a></li>
+                    <li class="mobile__nav--list"><a href="contacts.html" class="nav__link">Contacts</a></li>
+                    <li class="mobile__nav--list"><a href="donate.html" class="nav__link">Donate</a></li>
+                </ul>
+            </nav>
+            
+    </header>
+
+    <figure>
+        <img src="Images/cancerRibbonBanner.png" alt="Banner of the child cnacer ribbon" class="donate__banner"> 
+    </figure>
+
+    <h2 class="donate__title">Donate to help the children and families in need</h2>
+
+    <div class="form__container">
+        <form method="GET"> 
+            <label for="name">Full Name:</label>
+            <input name="Full Name" type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input name="Email Address" type="text" id="email" required>
+
+            <label for="phoneNum">Cell Phone:</label>
+            <input name="Cell Phone Number" type="text" id="phoneNum" required>
+
+            <label for="charity">Choose a charity:</label>
+            <select name="Charity select" id="charity">
+                <option>-please choose one-</option>
+                <option>St.Jude Children's Research Hospital</option>
+                <option>Ronald McDonald House</option>
+                <option>American Childhood Cancer Organization</option>
+                <option>Family Reach Foundation</option>
+                <option>Alex's Lemonade Stand Foundation</option>
+                <option>Children's Cancer Recovery Foundation</option>
+            </select>
+
+            <label for="donationAmount">Enter Donation Amount:</label>
+            <input name="Donation amount" type="text" id="donationAmount" required>
+
+            <label>Payment Method:</label>
+            <input name="credit card number" type="text" placeholder="Credit card number:" required>
+            <input name="credit card expiration date" type="text" placeholder="Expiration date:" required>
+            <input name="credit card cvv" type="text" placeholder="CVV:" required>
+
+            <label>Billing Address:</label>
+            <input name="Address" type="text" placeholder="Address:" required>
+            <input name="Address 2" type="text" placeholder="Address 2:">
+            <input name="Zip code" type="text" placeholder="Zip Code:" required>
+            <input name="City" type="text" placeholder="City:" required>
+            <input name="State" type="text" placeholder="State:" required>
+
+
+            <button name="submit button" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="socialMedia">
+            <a href="https://www.facebook.com/"><img src="Images/facebookIcon.png" alt="Facebook Logo"></a>
+            <a href="https://twitter.com/explore"><img src="Images/twitterIcon.png" alt="Twitter Logo"></a>
+            <a href="https://www.instagram.com/"><img src="Images/instagramIcon.png" alt="Instagram Logo"></a>
+            <a href="https://www.youtube.com/"><img src="Images/youtubeIcon.png" alt="Youtube Logo"></a>
+        </div>
+        <p class="copyright">Copyright © 2020 All Rights Reserved.</p>
+    </footer>
+
+    <script src="main_script.js"></script>
+</body>
+</html>

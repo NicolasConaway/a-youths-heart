@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Youth's Heart</title>
+    <link rel="stylesheet" type="text/css" href="main_styles.css">
+    <link rel="stylesheet" type="text/css" href="ContactsPage/contacts.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="main_header">
+        <div class="mobile__header">
+            <div id="mobile_hamburger" onclick="onClickMenu()">
+                <p class="toggle__nav">Toggle Nav</p>
+                <span id="topBar"></span>
+                <span id="middleBar"></span>
+                <span id="bottomBar"></span>
+            </div>
+        </div>
+
+        <h1 class="site__title">A Youth's Heart</h1>
+
+        <nav class="desktop__nav">
+                <ul class="desktop_nav_list">
+                 <li class="desktop__nav--list"><a href="home.html" class="nav__link">Home</a></li>
+                 <li class="desktop__nav--list"><a href="products.html" class="nav__link">Supplies</a></li>
+                 <li class="desktop__nav--list"><a href="contacts.html" class="nav__link">Contacts</a></li>
+                 <li class="desktop__nav--list"><a href="donate.html" class="nav__link">Donate</a></li>
+                </ul>
+            </nav>
+        </div>
+
+            <nav class="mobile__nav">
+                <ul class="nav_list" id="nav_list">
+                 <li class="mobile__nav--list"><a href="home.html" class="nav__link">Home</a></li>
+                 <li class="mobile__nav--list"><a href="products.html" class="nav__link">Supplies</a></li>
+                 <li class="mobile__nav--list"><a href="contacts.html" class="nav__link">Contacts</a></li>
+                 <li class="mobile__nav--list"><a href="donate.html" class="nav__link">Donate</a></li>
+                </ul>
+            </nav>
+            
+    </header>
+
+    <h2 class="contact__title">Contact our offices</h2>
+
+    <div class="contact__container">
+        <section class="contact__info">
+            <h2>Contact Information</h2>
+            <ul>
+                <li style="padding-bottom: 5%;">Phone: 999-999-9999</li>
+                <li style="padding-bottom: 5%;">Email: ayouthheart@gmail.com</li>
+                <li style="padding-bottom: 5%;">Hours: 9AM - 5PM, Mon - Fri</li>
+                <li>Mailing:</li>
+                <li>A Youth Heart Charlotte</li>
+                <li>P.O. Box 74846</li>
+                <li>Charlotte, NC 78332-7418</li>
+            </ul>
+        </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.863186052908!2d-80.82300538503299!3d35.20987668030687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88569ffa74a8daf7%3A0xb9d45ca9a56416e4!2sAtrium%20Health%20Mercy!5e0!3m2!1sen!2sus!4v1585506385847!5m2!1sen!2sus" 
+        width="400" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+
+    <div class="form__container">
+        <form method="GET"> 
+            <label for="name">Full Name:</label>
+            <input name="Full Name" type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input name="Email Address" type="text" id="email" required>
+
+            <label for="phoneNum">Cell Phone:</label>
+            <input name="Cell Phone Number" type="text" id="phoneNum" required>
+
+            <label for="comments">Comments:</label>
+            <textarea name="Comment section" id="comments" style="height: 150px;" required></textarea>
+
+            <button name="submit button" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="socialMedia">
+            <a href="https://www.facebook.com/"><img src="Images/facebookIcon.png" alt="Facebook Logo"></a>
+            <a href="https://twitter.com/explore"><img src="Images/twitterIcon.png" alt="Twitter Logo"></a>
+            <a href="https://www.instagram.com/"><img src="Images/instagramIcon.png" alt="Instagram Logo"></a>
+            <a href="https://www.youtube.com/"><img src="Images/youtubeIcon.png" alt="Youtube Logo"></a>
+        </div>
+        <p class="copyright">Copyright © 2020 All Rights Reserved.</p>
+    </footer>
+
+    <script src="main_script.js"></script>
+</body>
+</html>

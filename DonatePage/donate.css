@@ -1,0 +1,53 @@
+figure{
+    margin: 0;
+}
+.donate__banner{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    height: 200px;
+    width: 75%;
+}
+
+.donate__title{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2%;
+    font-size: 2rem;
+}
+
+.form__container{
+    font-family: 'Roboto', sans-serif;
+    margin: 5% 10% 5% 10%;
+    background-color: rgb(223, 160, 223);
+    padding: 2%;
+    border-radius: 10px;
+}
+input[type=text], select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+button{
+    background-color: rgb(238, 217, 96);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: rgb(216, 197, 89);
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+@media (max-width: 792px){
+    .donate__banner{
+        width: 100%;
+    }
+}

@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+}
+
+/* Mobile menu display */
+#mobile_hamburger{
+    width: 30px;
+    height: 30px;
+    margin: 30px 0 5px 10px;
+}
+#mobile_hamburger span{
+    width: 30px;
+    height: 2px;
+    background: black;
+    display: block;
+}
+.toggle__nav{
+    font-size: 0;
+}
+
+/* General anchor tag styling for the navbar */
+.nav_list{
+    padding:5px;
+    margin: 0;
+    display: none;
+    background-color: rgb(190, 78, 190);
+}
+.mobile__nav--list{
+    padding: 0 0 20px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    color: rgb(238, 217, 96);
+    list-style: none;
+    text-shadow: -.5px -.5px #000, .5px -.5px #000, -.5px .5px #000, .5px .5px #000;
+}
+.nav__link{
+    text-decoration: none;
+    color: rgb(238, 217, 96);
+}
+.nav__link:visited{ 
+    color: rgb(238, 217, 96);
+}
+.nav__link:hover{
+    border: 2px solid rgb(238, 217, 96);
+    background-color: rgb(238, 217, 96);
+    border-radius: 5px;
+    padding: 1px;
+    color: black;
+    text-shadow: none;
+}
+
+/* Hamburger icon display when clicked */
+#topBar{
+    transform: translateY(-4px);
+}
+#bottomBar{
+    transform: translateY(4px);
+}
+.change #topBar{
+    transform: translateY(2px) rotateZ(-50deg);
+}
+.change #bottomBar{
+    transform: translateY(-2px) rotateZ(50deg);
+}
+.change #middleBar{
+    opacity: 0;
+}
+.change{
+    display: block;
+}
+
+/* Desktop version of the navbar */
+.desktop__nav--list{
+    padding: 0 0 20px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    color: rgb(238, 217, 96);
+    list-style: none;
+    display: none;
+    text-shadow: -.5px -.5px #000, .5px -.5px #000, -.5px .5px #000, .5px .5px #000;
+}
+
+/* Header layout for desktop */
+.main_header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(190, 78, 190);
+    justify-content: space-evenly;
+}
+
+/* A Youth's Heart logo */
+.site__title{
+    font-family: 'Gotu', sans-serif;    
+    font-weight: bold;
+    font-size: 2.4rem;
+    color: rgb(238, 217, 96);
+    margin: 0 9.5%;
+    text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
+}
+
+/* Social Media on the Footer */
+.socialMedia{
+    display: inline-block;
+    text-align: center;
+}
+.socialMedia img{
+    width: 6%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%
+}
+
+/* Media allowing the website to changes it's design based on resolution */
+@media (min-width: 792px) {
+    .mobile__header{
+        display: none;
+    }
+    .site__title{
+        margin: 0 0 0 3%;
+    }
+    .main_header{
+        padding: 10px 0;
+        justify-content: space-between;
+    }
+    .desktop__nav--list{
+        display: inline-block;
+        padding: 0 20px;
+    }
+    .desktop_nav_list{
+        margin: 0;
+    }
+    .desktop__nav{
+        margin: 0 3% 0 0;
+    }
+    .socialMedia img{
+        width: 3%;
+        margin-bottom: 1%;
+    }
+}
+
+/* Footer */
+.footer{
+    background-color: rgb(190, 78, 190);
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.copyright{
+    text-align: center;
+    margin: 0;
+}
+
+
+
+
